@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class taschenrechner {
     public static void main(String[] args) {
-
+//Inizialisierung des Scanners und Abfrage des Nutzers
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Geben Sie die erste Zahl ein:");
@@ -16,7 +16,7 @@ public class taschenrechner {
 
         scanner.close();
         double output;
-
+//Switch für die verschiedenen Operatoren
         switch(operator)
         {
             case '+':
@@ -44,10 +44,10 @@ public class taschenrechner {
                 System.out.println("Sie haben einen falschen Operator eingegeben");
                 return;
         }
-
+//Output
         System.out.println("Das Ergebnis ist: "+output);
     }
-
+//Methoden für die jeweiligen Operatoren
 	public static double dividieren(double num1, double num2) {
 		double temp = num1 / num2;
 		return temp;
